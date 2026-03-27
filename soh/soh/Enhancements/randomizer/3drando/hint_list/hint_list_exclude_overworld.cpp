@@ -397,10 +397,14 @@ void StaticData::HintTable_Init_Exclude_Overworld() {
                                                              /*french*/ "Selon moi, le #marchand de légumes# vend #[[1]]#.", {QM_RED, QM_GREEN})});
                                                           // /*spanish*/ Según dicen, el vendedor de un #colorido cultivo# ofrece #[[1]]#.
 
-    hintTextTable[RHT_ZR_FROGS_IN_THE_RAIN] = HintText(CustomMessage("They say that #frogs in a storm# gift #[[1]]#.",
-                                                          /*german*/ "Man erzählt sich, daß #Frösche im Sturm# #[[1]]# schenken würden.",
-                                                          /*french*/ "Selon moi, #des grenouilles mouillées# donnent #[[1]]#.", {QM_RED, QM_GREEN}));
-                                                       // /*spanish*/ Según dicen, las #ancas bajo la tormenta# otorgan #[[1]]#.
+    hintTextTable[RHT_ZR_FROGS_IN_THE_RAIN] = HintText(CustomMessage("They say that after hearing #the Song of Storms, the frogs# gift #[[1]]#.",
+                                                          /*german*/ "Man erzählt sich, daß #Frösche im Sturm# #[[1]]# schenken würden.",//TODO_TRANSLATE update to match
+                                                          /*french*/ "Selon moi, #des grenouilles mouillées# donnent #[[1]]#.", {QM_RED, QM_GREEN}),//TODO_TRANSLATE update to match
+                                                       {},
+                                                       {CustomMessage("They say that #frogs in a storm# gift #[[1]]#.",
+                                                           /*german*/ "Man erzählt sich, daß #Frösche im Sturm# #[[1]]# schenken würden.",
+                                                           /*french*/ "Selon moi, #des grenouilles mouillées# donnent #[[1]]#.", {QM_RED, QM_GREEN})});
+                                                        // /*spanish*/ Según dicen, las #ancas bajo la tormenta# otorgan #[[1]]#.
 
     hintTextTable[RHT_ZR_FROGS_ZELDAS_LULLABY] = HintText(CustomMessage("They say that after hearing #Zelda's Lullaby, the frogs# gift #[[1]]#.",
                                                              /*german*/ "Man erzählt sich, daß #Frösche die Zeldas Wiegenlied# hören #[[1]]# schenken würden.",
